@@ -1,6 +1,6 @@
 @use 'colors';
 
-.header{
+.header {
     background-image: url(/assets/salon-mobile.jpg);
     height: 100vh;
     width: 100%;
@@ -12,7 +12,7 @@
     margin: 40px 0;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
@@ -22,39 +22,59 @@
     position: fixed;
     top: 0;
     width: 100%;
+
     &__link{
         display: none;
     }
 
-    &__logo{
+    &__hamburger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60vw;
+        height: 100%;
+        background-color: colors.$eight-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translate(110%);
+        /* transform: translate(0);
+        transition: transform 0.3s ease-in-out; */
+        box-shadow: 0 0 6px rgb(30, 100, 78);
+    }
+
+    &__logo {
         display: block;
     }
 
-    &__logo img{
+    &__logo img {
         width: 100px;
         height: auto;
     }
 
-    &__icon{
-        display: block;
+    &__icon {
+        /* display: block; */
         font-size: 40px;
+        /* position: fixed; */
+        /* top: 30px;
+        right: 30px; */
         color: colors.$five-color;
         cursor: pointer;
     }
 
-    &__link a{
+    &__hamburger a {
         color: colors.$two-color;
         text-decoration: none;
-        font-size: 20px;;
+        font-size: 20px;
         padding: 22px 12px;
     }
 
-    &__link a:hover{
+    &__link a:hover {
         color: colors.$one-color;
-        background-color: colors.$five-color;
     }
 
-    &__title{
+    &__title {
         padding: 0;
         height: 100%;
         display: flex;
@@ -66,12 +86,12 @@
         margin: 0 auto;
     }
 
-    &__h1{
+    &__h1 {
         color: colors.$seven-color;
         font-size: 2rem;
     }
 
-    &__paragraph{
+    &__paragraph {
         color: colors.$seven-color;
         font-weight: 700;
         font-size: 1.2rem;
@@ -79,12 +99,11 @@
 }
 
 @media (min-width: 800px) {
-
-    .header{
+    .header {
         background-image: url(/assets/salon.jpg);
     }
 
-    .nav{
+    .nav {
         height: 70px;
         display: flex;
         justify-content: space-between;
@@ -93,42 +112,56 @@
         top: 0;
         width: 100%;
 
-        &__link{
+        &__link {
             display: block;
             margin-right: 30px;
+            /* transform: translate(110%); */
         }
 
-        &__icon{
+        &__link a {
+            color: colors.$two-color;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 22px 12px;
+        }
+
+        &__hamburger{
             display: none;
         }
 
-        &__title{
+        &__link a:hover {
+            color: colors.$one-color;
+            background-color: colors.$five-color;
+        }
+
+        &__icon {
+            display: none;
+        }
+
+        &__title {
             width: 55%;
         }
 
-        &__h1{
+        &__h1 {
             font-size: 4rem;
         }
-        &__paragraph{
+        &__paragraph {
             font-size: 1.5rem;
         }
     }
 }
 
-@media (min-width: 1200px){
-    .nav{
-        &__title{
+@media (min-width: 1200px) {
+    .nav {
+        &__title {
             width: 60%;
         }
 
-        &__h1{
+        &__h1 {
             font-size: 4.2rem;
         }
-        &__paragraph{
+        &__paragraph {
             font-size: 1.8rem;
         }
     }
 }
-
-
-
