@@ -1,0 +1,58 @@
+@use 'colors';
+
+.header-servicios{
+    background-image: url(/assets/precios3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.nav{
+    &__h1--servicios{
+        color: colors.$three-color;
+        font-size: 3.5rem;
+    }
+}
+
+.servicios{
+    width: 90%;
+    margin: 50px auto;
+
+    &__table{
+        width: 100%;
+        background-color: #000;
+        text-align: left;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 0 rgb(0, 0, 0, .5);
+        border-collapse: collapse;
+    }
+
+    &__encabezado{
+        font-size: 1.8rem;
+        color:colors.$three-color;
+        padding: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    &__service{
+        color:colors.$three-color;
+        padding: 20px;
+        font-size: 1.2rem;
+        
+    }
+}
+
+@media (min-width: 800px){
+    .nav{
+        &__h1--servicios{
+            font-size: 4rem;
+        }
+    }
+
+    .servicios{
+        width: 60%;
+    }
+}

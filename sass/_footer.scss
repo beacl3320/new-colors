@@ -1,7 +1,7 @@
 @use 'colors';
 
 .footer{
-    background-color: colors.$seven-color;
+    background-color: colors.$eight-color;
     width: 100%;
     margin: 0 auto;
 
@@ -33,6 +33,8 @@
 
     &__contact{
         align-items: center;
+        display: flex;
+    flex-direction: column;
     }
 
     &__icon{
