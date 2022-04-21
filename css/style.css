@@ -147,7 +147,7 @@
 }
 .gallery {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 .gallery__title {
   text-align: center;
@@ -162,14 +162,17 @@
 .gallery__section h4 {
   text-align: center;
   color: #1e644e;
-  /* margin-bottom: 30px; */
+  margin-top: 60px;
   font-size: 1.5rem;
+}
+.gallery__section a {
+  text-decoration: none;
 }
 .gallery__line {
   border-bottom: 2px solid #972B98;
   width: 18%;
   height: 2px;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
 }
 .gallery__images {
   /* width: 60%;
@@ -196,7 +199,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .gallery__title {
     font-size: 2.5rem;
   }
@@ -215,6 +218,86 @@
   }
   .gallery__image--none {
     display: block;
+  }
+}
+.footer {
+  background-color: #D2D2D2;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__street {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.footer__street p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #1e644e;
+  margin-bottom: 5px;
+}
+.footer__logo {
+  width: 200px;
+}
+.footer__contact {
+  align-items: center;
+}
+.footer__icon {
+  color: #972B98;
+  margin: 10px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+.footer__phone {
+  margin: 5px;
+}
+.footer__social {
+  text-align: center;
+}
+.footer__social i:hover {
+  color: #1e644e;
+  /* background-color: aliceblue;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center; */
+}
+.footer__copyright {
+  text-align: center;
+  align-items: center;
+  height: 30px;
+  line-height: 30px;
+  color: #D2D2D2;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #635C59;
+}
+
+@media (min-width: 500px) {
+  .footer__contacts {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer__copyright {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .footer__contacts {
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 * {

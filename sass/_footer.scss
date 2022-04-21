@@ -1,0 +1,97 @@
+@use 'colors';
+
+.footer{
+    background-color: colors.$seven-color;
+    width: 100%;
+    margin: 0 auto;
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__street{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    &__street p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: colors.$two-color;
+        margin-bottom: 5px;
+    }
+
+    &__logo{
+        width: 200px;
+    }
+
+    &__contact{
+        align-items: center;
+    }
+
+    &__icon{
+        color: colors.$one-color;
+        margin: 10px 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    &__phone{
+        margin: 5px;
+    }
+
+    &__social{
+        text-align: center;
+    }
+
+    &__social i:hover{
+        color: colors.$two-color;
+        /* background-color: aliceblue;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center; */
+    }
+
+    &__copyright{
+        text-align: center;
+        align-items: center;
+        height: 30px;
+        line-height: 30px;
+        color: colors.$seven-color;
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 0 auto;margin-top: 30px;
+        background-color: colors.$six-color;
+    }
+}
+
+@media (min-width: 500px){
+    .footer{
+        &__contacts{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__copyright{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .footer{
+        &__contacts{
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
+}
