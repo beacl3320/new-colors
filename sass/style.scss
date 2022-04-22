@@ -3,6 +3,7 @@
 @use 'home';
 @use 'galeria';
 @use 'servicios';
+@use 'contacto';
 @use 'footer';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
@@ -15,7 +16,7 @@
 }
 
 body{
-    background: colors.$three-color;
+    background: #fff;
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Playfair Display', serif;
 }

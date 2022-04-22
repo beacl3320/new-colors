@@ -1,0 +1,45 @@
+@use 'colors';
+
+.header-contacto{
+    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.698) 0%, rgba(246, 128, 132, 0.664) 100%), url(/assets/headergaleria3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.nav{
+    &__h1--contacto{
+        /* -webkit-text-stroke: 2px colors.$two-color; */
+        /* color: colors.$seven-color; */
+        color: colors.$three-color;
+        /* color: transparent; */
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+}
+
+.contacto{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+@media (min-width: 800px){
+    .header-contacto{
+        height: 100vh;
+    }
+
+    .nav{
+        &__h1--contacto{
+            width: 100%;
+            font-size: 3.5rem;
+        }
+    }
+
+    .contacto{
+        width: 100%;
+    }
+}

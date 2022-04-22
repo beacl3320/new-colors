@@ -1,7 +1,7 @@
 @use 'colors';
 
 .header-galeria{
-    background-image: url(/assets/header-galeria-mobile.jpg);
+    background-image: url(/assets/header-galeria4-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,13 +11,14 @@
 
 .nav{
     &__h1--gallery{
-        color: colors.$eleven-color;
+        color: colors.$three-color;
+        /* -webkit-text-stroke: 2px colors.$two-color; */
         font-size: 3.5rem;
     }
 }
 @media (min-width: 800px){
     .header-galeria{
-        background-image: url(/assets/header-galeria.jpg);
+        background-image: url(/assets/header-galeria4.jpg);
     }
 }
 
