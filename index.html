@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1E644E" />
+        <!-- <link rel="stylesheet" href="css/animate.css"> -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link
             href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
             rel="stylesheet"
@@ -20,18 +25,16 @@
                 </div>
                 <i class="bx bx-menu-alt-right nav__icon"></i>
                 <div class="nav__link">
-                    <a href="/1-home.html">New Colors</a>
+                    <a href="/index.html">New Colors</a>
                     <a href="/2-galeria.html">Galería</a>
                     <a href="/3-servicios.html">Servicios</a>
-                    <a href="#salon">El Salón</a>
                     <a href="/5-contacto.html">Contacto</a>
                 </div>
 
                 <div class="nav__hamburger">
-                    <a href="/1-home.html">New Colors</a>
+                    <a href="/index.html">New Colors</a>
                     <a href="/2-galeria.html">Galería</a>
                     <a href="/3-servicios.html">Servicios</a>
-                    <a href="#salon">El Salón</a>
                     <a href="/5-contacto.html">Contacto</a>
                 </div>
                 <!-- <div class="nav__icons">
@@ -39,14 +42,32 @@
             </div> -->
             </nav>
             <div class="nav__title">
-                <h1 class="nav__h1">Tu peluquería en el barrio</h1>
-                <h1 class="nav__h1">"LOW COST"</h1>
-                <p class="nav__paragraph">Pásate a conocernos</p>
+                <h1 class="nav__h1 animate__animated animate__fadeInDown">Tu peluquería en Villa de Vallecas</h1>
+                <h1 class="nav__h1 animate__animated animate__fadeInDown">"NEW COLORS"</h1>
+                <p class="nav__paragraph animate__animated animate__fadeInDown">Pásate a conocernos</p>
             </div>
         </header>
 
+        <!-- SECTION HOME NEW COLORS -->
+        <section class="home">
+            <div class="home__box">
+                <img src="/assets/home/home-eli.jpg" alt="imágenes new colors" class="home__img wow" data-wow-duration="2s" data-wow-delay="5s">
+                <p class="home__paragraph">Calidad y profesionalidad en nuestra peluquería. ¡Recuerda que la vida es demasiado corta para llevar un pelo aburrido!</p>
+            </div>
+            <div class="home__line"></div>
+            <div class="home__box">
+                <img src="/assets/home/home-estanteria.jpg" alt="imágenes new colors" class="home__img home__img--reverse">
+                <p class="home__paragraph">Cuidar de sí mismo no es un gasto es una inversión. ¡Un cabello hermoso es un gran accesorio!</p>
+            </div>
+            <div class="home__line"></div>
+            <div class="home__box">
+                <img src="/assets/home/home-entrada.jpg" alt="imágenes new colors" class="home__img">
+                <p class="home__paragraph">Porque no cualquiera obtiene los mismos resultados con un tubo de tinte, unas tijeras y un hairspray. ¡Ven a conocernos!</p>
+            </div>
+        </section>
+
         <!-- SECTION GAlLERY -->
-        <section class="gallery">
+        <!-- <section class="gallery">
             <h2 class="gallery__title">GALERÍA</h2>
             <div class="gallery__section">
                 <a href="/2-galeria.html"><h4>Colores Fantasía</h4></a>
@@ -95,17 +116,17 @@
                     <img
                         src="/assets/peinados/peinado1.jpg"
                         class="gallery__image"
-                        alt="peinados comunión"
+                        alt="peinados"
                     />
                     <img
                         src="/assets/peinados/peinado2.jpg"
                         class="gallery__image"
-                        alt="peinados comunión"
+                        alt="peinados"
                     />
                     <img
                         src="/assets/peinados/peinado3.jpg"
                         class="gallery__image gallery__image--none"
-                        alt="peinados comunión"
+                        alt="peinados"
                     />
                 </div>
 
@@ -115,21 +136,40 @@
                     <img
                         src="/assets/tintes-reflejos/tinte1.jpg"
                         class="gallery__image"
-                        alt="peinados comunión"
+                        alt="Tintes - Reflejos"
                     />
                     <img
                         src="/assets/tintes-reflejos/tinte2.jpg"
                         class="gallery__image"
-                        alt="peinados comunión"
+                        alt="Tintes - Reflejos"
                     />
                     <img
                         src="/assets/tintes-reflejos/tinte3.jpg"
                         class="gallery__image gallery__image--none"
-                        alt="peinados comunión"
+                        alt="Tintes - Reflejos"
+                    />
+                </div>
+                <a href="/2-galeria.html"><h4>Cortes Modernos</h4></a>
+                <div class="gallery__line"></div>
+                <div class="gallery__images">
+                    <img
+                        src="/assets/cortes-modernos/corte1.jpg"
+                        class="gallery__image"
+                        alt="Cortes Modernos"
+                    />
+                    <img
+                        src="/assets/cortes-modernos/corte2.jpg"
+                        class="gallery__image"
+                        alt="Cortes Modernos"
+                    />
+                    <img
+                        src="/assets/cortes-modernos/corte3.jpg"
+                        class="gallery__image gallery__image--none"
+                        alt="Cortes Modernos"
                     />
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer class="footer">
             <div class="footer__contacts">
@@ -153,7 +193,7 @@
                 <p>Derechos Reservados &#169 New Colors 2022</p>
             </div>
         </footer>
-
+        <script src="js/wow.min.js"></script>
         <script src="/js/menu.js"></script>
     </body>
 </html>

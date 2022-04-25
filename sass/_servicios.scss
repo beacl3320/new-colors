@@ -24,11 +24,15 @@
     &__table{
         width: 100%;
         background-color: #000;
-        text-align: left;
+        /* text-align: left; */
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 0 rgb(0, 0, 0, .5);
         border-collapse: collapse;
+    }
+
+    &__start{
+        text-align: center;
     }
 
     &__encabezado{
@@ -42,7 +46,8 @@
         color:colors.$three-color;
         padding: 20px;
         font-size: 1.2rem;
-        
+        width: 50%;
+        text-align: center;
     }
 }
 

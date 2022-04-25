@@ -23,6 +23,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 
     &__link{
         display: none;
@@ -129,7 +130,7 @@
             text-decoration: none;
             font-size: 1.4rem;
             font-weight: 600;
-            padding: 22px 12px;
+            padding: 22px;
         }
 
         &__hamburger{
