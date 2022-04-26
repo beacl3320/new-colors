@@ -512,7 +512,7 @@
     margin: 0 auto;
   }
   .contacto__home, .contacto__phone, .contacto__whatsapp, .contacto__days, .contacto__hours {
-    width: 65%;
+    width: 70%;
   }
   .contacto__home p, .contacto__phone p, .contacto__whatsapp, .contacto__days p, .contacto__hours p, .contacto__sabado p {
     font-size: 1.2rem;
