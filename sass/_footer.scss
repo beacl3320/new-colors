@@ -26,6 +26,7 @@
         font-weight: 400;
         color: colors.$two-color;
         margin-bottom: 5px;
+        text-align: center;
     }
 
     &__logo{
@@ -35,14 +36,14 @@
     &__contact{
         align-items: center;
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     &__map{
         width: 150px;
-    height: 150px;
-    margin-top: 10px;
-    border-radius: 3px;
+        height: 150px;
+        margin-top: 10px;
+        border-radius: 3px;
     }
 
     &__icon{

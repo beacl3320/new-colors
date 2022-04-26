@@ -24,7 +24,98 @@
     width: 80%;
     margin: 0 auto;
     
+    &__images{
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &__images img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.25);
+    }
+
+    &__contacto{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__contacto h3, &__horarios h3{
+        color: colors.$one-color;
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__line{
+        border-bottom: 2px solid #1e644e;
+        width: 18%;
+        height: 2px;
+        margin: 0 auto 30px;
+    }
+
+    &__home, &__phone, &__whatsapp, &__days, &__hours{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    &__home i, &__phone i, &__whatsapp i, &__days i, &__hours i{
+        margin-right: 10px;
+        color: colors.$one-color;
+        font-size: 1.4rem;
+    }
+
+    &__home p, &__phone p, &__whatsapp, &__days p, &__hours p, &__sabado p{
+        color: colors.$one-color;
+    }
+
+    &__calendario{
+        margin: 25px 0;
+    }
+
+    &__sabado{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    &__sabado p{
+        font-size: 0.8rem;
+    }
+
+    &__days span, &__sabado span{
+        color: colors.$one-color;
+        font-weight: bold;
+    }
+
+    &__maps{
+        text-align: center;
+    }
+
+    &__map{
+        width: 90%;
+        height: 90%;
+        margin: 20px auto;
+    }
 }
+
+@media (min-width: 500px){
+    .contacto{
+        &__contacto h3, &__horarios h3{
+            font-size: 1.6rem;
+        }
+
+        &__map{
+            width: 80%;
+            height: 250px;
+        }
+    }
 
 
 @media (min-width: 800px){
@@ -41,6 +132,52 @@
     }
 
     .contacto{
-        width: 100%;
+        width: 90%;
+
+        &__box{
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+
+        &__contacto, &__horarios{
+            width: 40%;
+            margin: 30px;
+        }
+
+        &__images{
+            /* width: 100%;
+            text-align: center;
+            margin: 30px 0; */
+            display: flex;
+            gap: 20px;
+        }
+
+        &__images img{
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        &__home, &__phone, &__whatsapp, &__days, &__hours{
+            width: 65%;
+        }
+
+        &__home p, &__phone p, &__whatsapp, &__days p, &__hours p, &__sabado p{
+            font-size: 1.2rem;
+        }
+
+        &__sabado p{
+            width: 65%;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        &__map{
+            width: 80%;
+            height: 350px;
+        }
+
     }
+}
 }

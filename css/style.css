@@ -400,8 +400,83 @@
   width: 80%;
   margin: 0 auto;
 }
+.contacto__images {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+.contacto__images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.25);
+}
+.contacto__contacto {
+  width: 100%;
+  margin: 0 auto;
+}
+.contacto__contacto h3, .contacto__horarios h3 {
+  color: #972B98;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.contacto__line {
+  border-bottom: 2px solid #1e644e;
+  width: 18%;
+  height: 2px;
+  margin: 0 auto 30px;
+}
+.contacto__home, .contacto__phone, .contacto__whatsapp, .contacto__days, .contacto__hours {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
+.contacto__home i, .contacto__phone i, .contacto__whatsapp i, .contacto__days i, .contacto__hours i {
+  margin-right: 10px;
+  color: #972B98;
+  font-size: 1.4rem;
+}
+.contacto__home p, .contacto__phone p, .contacto__whatsapp, .contacto__days p, .contacto__hours p, .contacto__sabado p {
+  color: #972B98;
+}
+.contacto__calendario {
+  margin: 25px 0;
+}
+.contacto__sabado {
+  width: 90%;
+  margin: 10px auto;
+}
+.contacto__sabado p {
+  font-size: 0.8rem;
+}
+.contacto__days span, .contacto__sabado span {
+  color: #972B98;
+  font-weight: bold;
+}
+.contacto__maps {
+  text-align: center;
+}
+.contacto__map {
+  width: 90%;
+  height: 90%;
+  margin: 20px auto;
+}
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
+  .contacto__contacto h3, .contacto__horarios h3 {
+    font-size: 1.6rem;
+  }
+  .contacto__map {
+    width: 80%;
+    height: 250px;
+  }
+}
+@media (min-width: 500px) and (min-width: 800px) {
   .header-contacto {
     background-image: url(/assets/contacto5.jpg);
     height: 100vh;
@@ -413,7 +488,43 @@
   }
 
   .contacto {
-    width: 100%;
+    width: 90%;
+  }
+  .contacto__box {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .contacto__contacto, .contacto__horarios {
+    width: 40%;
+    margin: 30px;
+  }
+  .contacto__images {
+    /* width: 100%;
+    text-align: center;
+    margin: 30px 0; */
+    display: flex;
+    gap: 20px;
+  }
+  .contacto__images img {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .contacto__home, .contacto__phone, .contacto__whatsapp, .contacto__days, .contacto__hours {
+    width: 65%;
+  }
+  .contacto__home p, .contacto__phone p, .contacto__whatsapp, .contacto__days p, .contacto__hours p, .contacto__sabado p {
+    font-size: 1.2rem;
+  }
+  .contacto__sabado p {
+    width: 65%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .contacto__map {
+    width: 80%;
+    height: 350px;
   }
 }
 .footer {
@@ -440,6 +551,7 @@
   font-weight: 400;
   color: #1e644e;
   margin-bottom: 5px;
+  text-align: center;
 }
 .footer__logo {
   width: 200px;
